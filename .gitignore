@@ -1,0 +1,11 @@
+# OMEGA is installed per run by the agent; its files never enter this repo.
+.claude/
+.grok/
+.omega/
+.codex/
+.agents/
+CLAUDE.md
+AGENTS.md
+specs/
+docs/
+__pycache__/
