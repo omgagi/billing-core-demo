@@ -40,5 +40,11 @@ class InvoiceTotals(unittest.TestCase):
         self.assertEqual(inv.tax_cents(), 200)
 
 
+    def test_multi_line_rounding_applies_to_invoice_subtotal(self):
+        # 10% of (1000 + 995) = 199.5 -> 200
+        inv = Invoice([Line("a", 1, 1000), Line("b", 1, 995)], tax_rate_pct=10)
+        self.assertEqual(inv.total_cents(), 2195)
+
+
 if __name__ == "__main__":
     unittest.main()
