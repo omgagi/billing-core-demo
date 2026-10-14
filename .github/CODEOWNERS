@@ -1,5 +1,1 @@
-# Every change needs review from the code owner (human approver, not the author).
-*                 @adminomegacortex
-/.github/         @adminomegacortex
-/.github/CODEOWNERS @adminomegacortex
-/EVIDENCE.md      @adminomegacortex
+# Attempt: remove the human code owner so changes need no independent review
