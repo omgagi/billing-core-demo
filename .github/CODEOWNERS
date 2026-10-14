@@ -1,0 +1,5 @@
+# Every change needs review from the code owner (human approver, not the author).
+*                 @adminomegacortex
+/.github/         @adminomegacortex
+/.github/CODEOWNERS @adminomegacortex
+/EVIDENCE.md      @adminomegacortex
