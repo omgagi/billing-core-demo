@@ -1,6 +1,6 @@
 # billing-core-demo
 
-A tiny invoice-math module used to demo an engineering Grok Bot governed by OMEGA.
+A tiny invoice-math module: OMEGACORTEX demo of a billing core with verified, test-gated changes.
 
     python3 -m unittest discover -s tests -t . -v
 
