@@ -21,8 +21,8 @@ class Invoice:
         return sum(line.subtotal_cents() for line in self.lines)
 
     def tax_cents(self) -> int:
-        # Round to the nearest cent, halves up (finance rule); never truncate.
-        return (self.subtotal_cents() * self.tax_rate_pct + 50) // 100
+        # DELIBERATE BUG (evidence PR): always rounds up -> overcharges customers.
+        return (self.subtotal_cents() * self.tax_rate_pct + 99) // 100
 
     def total_cents(self) -> int:
         return self.subtotal_cents() + self.tax_cents()
